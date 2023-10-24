@@ -1,0 +1,13 @@
+.footer-home {
+    text-align: center;
+}
+
+.footer-article div {
+    color: var(--color-celeste);
+    font-size: 2em;
+    
+}
+
+.footer-article {
+    margin-bottom: 10px;
+}

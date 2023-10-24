@@ -1,0 +1,37 @@
+.titular {
+    font-size: 24px ;
+    text-align: center;
+}
+
+.precios {
+    font-size: 18px;
+}
+.descuentos,
+.descripciones {
+    font-size: 16px;
+}
+
+.precios,
+.descripciones,
+.descuentos {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.body-main {
+    background-color: var(--color-gris-claro);
+}
+
+.productos {
+    text-align: center; 
+    padding: 5px 15px;
+}
+
+.body-main section img {
+    width: 100%;
+    
+}
+
+.detalles-productos {
+    background-color: white;
+    padding: 5px 0px;
+}
