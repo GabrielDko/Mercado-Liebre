@@ -1,6 +1,10 @@
 .titular {
-    font-size: 24px ;
+    font-size: 30px ;
     text-align: center;
+    color: var(--color-gris-oscuro);
+}
+.banner-main-home {
+    width: 100%;
 }
 
 .precios {
@@ -12,20 +16,30 @@
 }
 
 .precios,
-.descripciones,
 .descuentos {
-    margin-bottom: 20px;
-    text-align: center;
-}
-.body-main {
-    background-color: var(--color-gris-claro);
+    margin-bottom: 5px;
 }
 
+.descuentos {
+    color: rgb(78, 180, 78);
+}
+
+.descripciones {
+    margin-top: 20px;
+    padding-bottom: 5px;
+    display: none;
+}
 .productos {
-    text-align: center; 
-    padding: 5px 15px;
-}
+    border-top: solid 1px #ebebeb;
 
+}
+.main-article-section {
+    width: 90%;
+    margin: auto;
+}
+.body-main article {
+    margin-top: 10px;
+}
 .body-main section img {
     width: 100%;
     
@@ -33,5 +47,24 @@
 
 .detalles-productos {
     background-color: white;
-    padding: 5px 0px;
+    padding: 5px 15px;
+    
+}
+
+.article-truck-icon {
+    border: green solid 1px;
+    color: green;
+    border-radius: 30px;
+    width: 35px;
+    height: 35px;
+    padding: 8px 0px 0px 8px;
+}
+
+@media (min-width: 361px){
+    .descripciones{
+        display: block;
+    }
+    .productos {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
 }

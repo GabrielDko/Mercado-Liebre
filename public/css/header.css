@@ -1,55 +1,110 @@
 .header-home {
+    padding: 20px;
     background-color: var(--color-amarillo);
 }
-
-.logo-header {
-    width: 25%;
+.header-nav {
+    display: none;
 }
+.logo-header {
+    width: 150px;
+}
+.header-nav a {
+    display: inline-block;
+    padding: 5px 0px;
+}
+
+.header-nav ul, .header-nav a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
 
 .descripcion-compras {
     text-align: center;
-    margin: 20px ;
     font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px;
 }
 
-.barra-busqueda-header {
-    padding-left: 3%;
-    
-} 
 
 .icono-lupa {
     background-color: var(--color-gris-claro);
     display: inline;
     border-radius: 3px;
     border: black solid 1px;
+    
 }
 
-ul {
-    list-style-type: none;
-    Padding-inline-start: 3px;
-}
 
-.usuario-nav {
-    margin-top: 20px ;
-}
 
-.burger-bar {
-    margin: auto;
+.bottom-burger {
     background-color: var(--color-celeste);
-    padding: 1% 2vw;
-    width: 10vw;
-    border-radius: 5px;
-    font-size: 7vw;
+    max-width: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 15px 0px;
     color: var(--color-gris-claro);
+    display:block;
+    text-align: center;
+    margin: auto;
 }
+@media (min-width: 361px){
+    .header-top-bar{
+        text-align: center;
+        margin: 0;
+    }
+}
+@media (min-width: 769px){
+    .header-top-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+    }
 
-.espacio-burger {
-    padding: 30px;
+    .descripcion-compras {
+        max-width: 250px;
+        text-align: right;
+        margin: 0;
+    }
+    .header-nav {
+        display:flex;
+        justify-content: space-between;
+    }
+    .header-nav ul {
+        display: flex;
+    }
+    .header-nav li {
+        margin: 0px 10px;
+    }
+    .bottom-burger {
+    display: none;
+}
 }
 
 @media (min-width: 1200px){
+    .header-top-bar, .header-nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    .header-nav {
+        margin-top: 30px;
+    }
+    .header-nav li {
+        margin: 0px 15px;
+    }
+    .header-nav a {
+        font-size: 16px;
+    }
+    .descripcion-compras {
+        max-width: none;
+        font-size: 18px;
 
-    .burger-bar {
-        display: none;
+    }
+    .form-navbar {
+        font-size: 2vw;
+    }
+    .logo-header {
+        width: 250px;
     }
 }
