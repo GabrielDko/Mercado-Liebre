@@ -4,9 +4,40 @@
 }
 .header-nav {
     display: none;
+    
+}
+
+.header-nav a:hover {
+    box-shadow: 0px 0px 5px var(--color-gris-oscuro);
+    border-radius: 1px var(--color-gris-oscuro) solid;
+    padding: 2px 5px;
 }
 .logo-header {
-    width: 150px;
+    width: 50%;
+
+}
+.header-description-navbar{
+    margin-bottom: 3vw;
+}
+
+.header-top-bar {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+.form-navbar {
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.nav-input {
+    height: 30px;
+}
+.nav-bar {
+    font-size: 80%;
+    height: 50px;
 }
 .header-nav a {
     display: inline-block;
@@ -48,24 +79,29 @@
     text-align: center;
     margin: auto;
 }
-@media (min-width: 361px){
-    .header-top-bar{
-        text-align: center;
-        margin: 0;
+
+@media (min-width: 768px){
+    .header-description-navbar{
+        display: flex;
+        justify-content: space-between;
     }
-}
-@media (min-width: 769px){
     .header-top-bar{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin: 0;
+        margin: auto;
+        width: 62vw;
     }
-
+    .form-navbar {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    }
+    
     .descripcion-compras {
-        max-width: 250px;
         text-align: right;
-        margin: 0;
+        margin: auto;
+        font-size: 12px ;
     }
     .header-nav {
         display:flex;
@@ -81,10 +117,9 @@
     display: none;
 }
 }
-
-@media (min-width: 1200px){
+@media (min-width: 1024px){
     .header-top-bar, .header-nav{
-        max-width: 1200px;
+        max-width: 1024px;
         margin: auto;
     }
     .header-nav {
@@ -101,10 +136,5 @@
         font-size: 18px;
 
     }
-    .form-navbar {
-        font-size: 2vw;
-    }
-    .logo-header {
-        width: 250px;
-    }
+
 }
