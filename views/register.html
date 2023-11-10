@@ -41,7 +41,7 @@
         </nav>
     </header>
     <main class="register-main-body">
-        <form action="/" class="register-form">
+        <form action="/register" class="register-form" method="post">
             <div class="input-data">
                 <label class="label-description" for="name">Nombre y Apellido</label>
                 <input type="text" name="data-user"  id="name" required minlength="8">
@@ -66,47 +66,47 @@
                 <label class="label-description" for="">Perfil del usuario</label>
                 <div class="input-select-data">
                     
-                    <input type="radio" name="perfilUsuario" id="profile-type" required>
+                    <input type="radio" name="perfilUsuario" id="profile-type" required value="Comprador">
                     <label for="profile-type">Comprador</label>
                 
-                    <input type="radio" name="perfilUsuario" id="profile-type" required>
+                    <input type="radio" name="perfilUsuario" id="profile-type" required value="Vendedor">
                     <label for="profile-type">Vendedor</label>
                 </div>
             </div>
             <div>
                 <label class="label-description" for="">Categorias de interés</label>
                 <div>
-                    <input type="checkbox" name="categorias" id="electro">
+                    <input type="checkbox" name="categorias" id="electro" value="electro">
                     <label for="electro">Electro</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="categorias" id="moda">
+                    <input type="checkbox" name="categorias" id="moda" value="moda">
                     <label for="moda">Moda</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="categorias" id="hogar">
+                    <input type="checkbox" name="categorias" id="hogar" value="hogar">
                     <label for="hogar">Hogar</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="categorias" id="jugueteria">
+                    <input type="checkbox" name="categorias" id="jugueteria" value="jugueteria">
                     <label for="jugueteria">Jugueteria</label>
                 </div>
                 <div>
-                    <input type="checkbox" name="categorias" id="vidaSana">
+                    <input type="checkbox" name="categorias" id="vidaSana" value="vidaSana">
                     <label for="vidaSana">Vida sana</label>
                 </div>
             </div>
             <div class="input-data">
-                <label class="label-description" for="">Foto de usuario</label>
-                <input type="file" name="" id="">
+                <label class="label-description" for="profile">Foto de usuario</label>
+                <input type="file" name="profile" id="profile">
             </div>
             <div class="input-data">
-                <label class="label-description for="">Contraseña</label>
-                <input type="password" name="" id="" required minlength="8">
+                <label class="label-description" for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required minlength="8">
             </div>
             <div class="input-data">
-                <label class="label-description for="">Confirmar contraseña</label>
-                <input type="password" name="" id="" required minlength="8">
+                <label class="label-description" for="password">Confirmar contraseña</label>
+                <input type="password" name="password" id="password" required minlength="8">
             </div>
             <div class="buttons-register-form">
                 <button type="submit">Registrarse</button>
