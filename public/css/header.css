@@ -4,7 +4,6 @@
 }
 .header-nav {
     display: none;
-    
 }
 
 .header-nav a:hover {
@@ -12,12 +11,10 @@
 }
 .logo-header {
     width: 50%;
-
 }
 .header-description-navbar{
     margin-bottom: 3vw;
 }
-
 .header-top-bar {
     display: flex;
     text-align: center;
@@ -32,6 +29,8 @@
 
 .nav-input {
     height: 30px;
+    border: 1px;
+    border-radius: 5px ;
 }
 .nav-bar {
     font-size: 80%;
@@ -39,9 +38,10 @@
 }
 .header-nav a {
     display: inline-block;
-    padding: 5px;
+    padding: 5px 0px;
     border-radius: 10px;
     transition: box-shadow 450ms;
+    font-weight: 900;
 }
 
 .header-nav ul, .header-nav a {
@@ -56,6 +56,7 @@
     font-weight: bold;
     padding: 15px 0px;
 }
+
 
 
 .icono-lupa {
@@ -81,6 +82,9 @@
 }
 
 @media (min-width: 768px){
+    .header-nav a {
+        font-size: 12px;
+    }
     .header-description-navbar{
         display: flex;
         justify-content: space-between;
@@ -134,6 +138,22 @@
         max-width: none;
         font-size: 18px;
 
+    }
+    .nav-input {
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 30px 14px 31px 15px;
+    font-size: 20px;
+}.nav-input {
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5% 31% 6% 5%;
+    font-size: 20px;
+}
+    .header-nav a {
+        font-size: 18px;
     }
 
 }
