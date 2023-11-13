@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto&family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --color-amarillo: #EAc926;
+    --color-azul: #03264C;
+    --color-celeste: #1259c3;
+    --color-gris-oscuro:#666;
+    --color-gris-claro: #ebebeb;
+    --color-verde: #39b54a;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    color: black; 
+    text-decoration: none;
+    background-color: var(--color-gris-claro);
+    transition: all 550ms;
+}
+
+a {
+    color: black ;
+    text-decoration: none;
+}
+
+p {
+    font-size: 12px;
+}
+

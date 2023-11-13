@@ -1,0 +1,159 @@
+.header-home {
+    padding: 20px;
+    background-color: var(--color-amarillo);
+}
+.header-nav {
+    display: none;
+}
+
+.header-nav a:hover {
+    box-shadow: 0px 0px 5px var(--color-gris-oscuro);
+}
+.logo-header {
+    width: 50%;
+}
+.header-description-navbar{
+    margin-bottom: 3vw;
+}
+.header-top-bar {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    font-size: 15px;
+}
+.form-navbar {
+    width: 50%;
+    margin: auto;
+    font-size: 10px;
+}
+
+.nav-input {
+    height: 30px;
+    border: 1px;
+    border-radius: 5px ;
+}
+.nav-bar {
+    font-size: 80%;
+    height: 50px;
+}
+.header-nav a {
+    display: inline-block;
+    padding: 5px 0px;
+    border-radius: 10px;
+    transition: box-shadow 450ms;
+    font-weight: 900;
+}
+
+.header-nav ul, .header-nav a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+
+.descripcion-compras {
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 15px 0px;
+}
+
+
+
+.icono-lupa {
+    background-color: var(--color-gris-claro);
+    display: inline;
+    border-radius: 3px;
+    border: black solid 1px;
+    
+}
+
+
+
+.bottom-burger {
+    background-color: var(--color-celeste);
+    max-width: 50px;
+    border-radius: 8px;
+    font-size: 18px;
+    padding: 15px 0px;
+    color: var(--color-gris-claro);
+    display:block;
+    text-align: center;
+    margin: auto;
+}
+
+@media (min-width: 768px){
+    .header-nav a {
+        font-size: 12px;
+    }
+    .header-description-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .header-top-bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: auto;
+        width: 62vw;
+    }
+    .form-navbar {
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    }
+    
+    .descripcion-compras {
+        text-align: right;
+        margin: auto;
+        font-size: 12px ;
+    }
+    .header-nav {
+        display:flex;
+        justify-content: space-between;
+    }
+    .header-nav ul {
+        display: flex;
+    }
+    .header-nav li {
+        margin: 0px 10px;
+    }
+    .bottom-burger {
+    display: none;
+}
+}
+@media (min-width: 1024px){
+    .header-top-bar, .header-nav{
+        margin: auto;
+    }
+    .header-nav {
+        margin-top: 30px;
+    }
+    .header-nav li {
+        margin: 0px 15px;
+    }
+    .header-nav a {
+        font-size: 16px;
+    }
+    .descripcion-compras {
+        max-width: none;
+        font-size: 18px;
+
+    }
+    .nav-input {
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 30px 14px 31px 15px;
+    font-size: 20px;
+}.nav-input {
+    height: 30px;
+    border: 1px;
+    border-radius: 5px;
+    padding: 5% 31% 6% 5%;
+    font-size: 20px;
+}
+    .header-nav a {
+        font-size: 18px;
+    }
+
+}
