@@ -13,3 +13,14 @@
 .footer-article {
     margin-bottom: 10px;
 }
+
+@media (min-width: 1024px){
+    .footer-bar{
+        display: flex;
+        justify-content: space-around;
+        padding: 50px;
+    }
+    .copyright-text {
+        display: block;
+    }
+}
