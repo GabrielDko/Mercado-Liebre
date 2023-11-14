@@ -13,6 +13,14 @@
 .footer-article {
     margin-bottom: 10px;
 }
+.footer-article i {
+    transition: color 450ms;
+}
+.footer-article:hover i {
+    color: var(--color-amarillo);
+
+}
+
 
 @media (min-width: 1024px){
     .footer-bar{

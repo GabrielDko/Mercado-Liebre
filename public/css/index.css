@@ -32,7 +32,8 @@
 }
 
 .descripciones {
-    visibility: hidden;
+    opacity: 0%;
+    transition: opacity 450ms;
 }
 
 .main-article-section-off,
@@ -90,7 +91,8 @@
     }
     
     .productos:hover .descripciones{
-        visibility: visible;
+        opacity: 100%;
+        transition: opacity 450ms;
     }
 
     .main-article-section-off,
